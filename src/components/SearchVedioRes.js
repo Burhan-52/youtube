@@ -2,7 +2,6 @@ import React from 'react'
 import { useSearchParams } from 'react-router-dom'
 
 const SearchVedioRes = ({ data }) => {
-  let [searchParams] = useSearchParams();
 
   return (
     <div className=' my-5 flex flex-wrap'>

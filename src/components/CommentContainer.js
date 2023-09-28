@@ -4,8 +4,10 @@ import CommentList from './CommentList'
 import { comment_Api } from '../config'
 
 const CommentContainer = () => {
-    const [videocomment, setvideocomment] = useState([])
     let [searchParams] = useSearchParams();
+
+    const [videocomment, setvideocomment] = useState([])
+    
     const fixcomment = async () => {
         try {
             const vedio = await fetch(comment_Api(searchParams.get("v")))

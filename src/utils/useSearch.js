@@ -1,4 +1,3 @@
-import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { chacheResults } from '../utils/store/searchSlice'
 import { useState, useEffect } from 'react'

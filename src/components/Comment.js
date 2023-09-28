@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Comment = ({ data }) => {
+    const { textOriginal } = data?.snippet?.topLevelComment?.snippet
     return (
         <div className='flex mt-3 items-start'>
             <img
@@ -8,7 +9,8 @@ const Comment = ({ data }) => {
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Font_Awesome_5_solid_user-circle.svg/1200px-Font_Awesome_5_solid_user-circle.svg.png"
                 alt='channel-icon'
             />
-            <div className='ml-4'> {data?.snippet?.topLevelComment?.snippet?.textOriginal}</div>
+            {/* <div className='ml-4'> {data?.snippet?.topLevelComment?.snippet?.textOriginal}</div> */}
+            <div className='ml-4'> {textOriginal}</div>
         </div>
     )
 }

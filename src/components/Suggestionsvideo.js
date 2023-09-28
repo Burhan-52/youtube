@@ -47,7 +47,7 @@ const Suggestionsvideo = () => {
     return (
         <div>
             {suggestionvideo.map((data) => {
-                return <Link to={"/watch?v=" + data?.id?.videoId}> <Suggestionlist data={data} /></Link>
+                return <Link to={"/watch?v=" + data?.id?.videoId}> <Suggestionlist  data={data} /></Link>
             })}
         </div>
 
